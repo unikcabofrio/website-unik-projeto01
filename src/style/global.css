@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+
+p{
+    font-weight: 300;
+}
+
+a{
+    font-weight: 300;
+    text-decoration: none;
+    color:#F2F2F2;
+}
+
+
+a:hover{
+    color:#F2490C;
+}
+
+strong{
+    font-weight: 500;
+}
+
+/* Codigo das cores */
+/* #BF0F1E */
+/* #F2A950 */
+/* #F2490C */
+/* #591708 */
+/* #F2F2F2 */
+/* #6f6f6f */
+
+/* Layout */
+#layout{
+    position: relative;
+    height: 100vh;
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Main */
+main{
+    width: 100%;
+    padding: 1rem;
+}
+
+.otherpet{
+    padding: 5rem;
+    display: flex;
+}
+
+.otherpet_text{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.otherpet_text > h3{
+    font-size: 1.6rem;
+}
+
+.otherpet_text > p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #F2490C;
+}
+
+.otherpet_bone {
+    width: 30%;
+    margin-right: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    0%,100%{
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+  }
+
+
+.otherpet_bone > i {
+    position: absolute;
+    color: #F2490C;
+    font-size: 15rem;
+    transform: rotate(45deg);
+    filter: drop-shadow(0px 0px 5px rgba(0 0 0 / 30%));
+}
+
+.otherpet_bone > p {
+    position: absolute;
+    width: 60%;
+    margin-top: 8.3rem;
+    margin-left: 3rem;
+    color:#F2F2F2;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #F2A950;
+}
+
+footer > #dragElement{
+    cursor: grab;
+    position: absolute;
+}
+
+.f_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_2{
+    background-color: #591708;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 5rem;
+}
+
+.f_1SocialLink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.f_1SocialLink > a {
+    background-color: #F2F2F2;
+    padding: 2rem;
+    margin: .5rem;
+    border-radius: 20%;
+    position: relative;
+    scale: .9;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.f_1SocialLink > a:hover{
+    scale: 1;
+}
+
+.f_1SocialLink > a:hover > i{
+    color: #591708;
+    scale: 1.1;
+}
+
+.f_1SocialLink > a > i{
+    color: #F2A950;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -13px;
+}
+
+.f_1middleinfor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.f_1middleinfor > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.f_1middleinfor > div > h2{
+    color: #591708;
+    font-size: 1.5rem;
+}
+
+.f_1middleinfor > div > a{
+    display: flex;
+    align-items: center;
+}
+
+.f_1middleinfor > div > a > i{
+    margin-right: .5rem;
+}
+
+.f_2 > p > a {
+    text-decoration: underline;
+}
