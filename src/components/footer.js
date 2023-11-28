@@ -34,7 +34,7 @@ export default function Footer({Year}) {
         // Limitador de tela para a esquerda
         posX = Math.max(posX, 0);
         // Limitador de tela para a direita
-        posX = Math.min(posX, window.innerWidth - dragElement.offsetWidth - 20);
+        posX = Math.min(posX, window.innerWidth - dragElement.offsetWidth - 180);
 
         dragElement.style.left = posX + 'px';
       }
