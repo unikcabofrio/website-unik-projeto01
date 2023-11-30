@@ -5,7 +5,8 @@ export default function Title({title,subtitle}) {
           display:"flex",
           flexDirection:"column",
           alignItems:"center",
-          margin:"1rem 0"
+          margin:"1rem 0",
+          paddingTop:"2rem"
         }}>
           <h2 style={{
             fontSize:"3rem"

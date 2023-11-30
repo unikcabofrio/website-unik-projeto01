@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
     box-sizing: border-box;
-    transition: all .2s;
 }
 
 p{
@@ -41,17 +40,12 @@ strong{
     height: 100vh;
 }
 
-/* Header */
-header{
+header,main{
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
+    transition: all .2s;
 }
 
-/* Main */
-main{
-    width: 100%;
-    padding: 1rem;
-}
 
 /* Galeria de Fotos */
 .grid {
@@ -117,6 +111,223 @@ main{
     border: 2px solid #F2F2F2;
     padding: .5rem;
     border-radius: 1rem;
+}
+
+/* Lista de Preços */
+.PriceList{
+    width: 100%;
+    background-color: #F2A950;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.listbox_price{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box_price{
+    width: 20%;
+    margin: 0 1rem;
+    background-color: #FFFFFF;
+    color:white;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+}
+
+.box_price:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box_price > div {
+    position: relative;
+    padding: 1rem 0.5rem;
+}
+
+.box_price > .title{
+    text-align: center;
+    color: #591708;
+    padding-bottom: 0 !important;
+}
+
+.box_price > .title > h1{
+    font-size: 2rem;
+}
+
+.box_price > .title > p{
+    font-weight: 400;
+}
+
+.box_price > .price{
+    width: 100%;
+    background-color: #FFFFFF;
+    color:#e74004;
+    text-align: center;
+}
+.box_price > .price > p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #591708;
+}
+
+.box_price > .price > strong{
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+
+.box_price > .price > strong > p{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.box_price > .price > strong > .rs{
+    padding-top: .6rem;
+}
+
+.box_price > .price > strong > .cent{
+    padding-top: 1.6rem;
+}
+
+.descript{
+    width: 100%;
+    background-color: #591708;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    text-align: justify;
+    direction:ltl;
+}
+
+.descript > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descript > p > i{
+    margin-right: .5rem;
+    padding-top: .2rem;
+}
+
+.box_price > .button{
+    width: 100%;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 2.5rem 1rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_price > .button > div{
+    width: 80% ;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #F2490C;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.box_price > .button > div > p {
+    position: relative;
+    transition: all .2s;
+}
+
+.box_price > .button > div::before{
+    content: "";
+    text-align: center;
+    display: flex;
+    width: 10%;
+    height: 100%;
+    background-color: #F2490C;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: 0;
+    top:0;
+    left: 0;
+    transition: all .2s;
+}
+
+.box_price > .button > div:hover > p{
+    letter-spacing: 0.2rem;
+
+}
+
+.box_price > .button > div:hover::before{
+    width: 100%;
+    background-color: #e74004;
+}
+
+.custom-shape-divider-top-1701301856 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1701301856 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 20px;
+}
+
+.custom-shape-divider-top-1701301856 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-bottom-1701300258 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1701300258 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 20px;
+}
+
+.custom-shape-divider-bottom-1701300258 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1701299214 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1701299214 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-bottom-1701299214 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* Outro Pet */
