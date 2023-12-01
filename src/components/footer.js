@@ -44,13 +44,12 @@ export default function Footer({Year}) {
 
   return (
     <>
-      <footer>
+      <footer id={"footer"}>
         <Image
           style={{
             transition:"all .0s",
             marginTop:"-103px",
             marginLeft:"80px",
-            webkitFilter: "drop-shadow(0px 0px 20px rgba(0 0 0 / 90%))", 
             filter:" drop-shadow(0px 2px 5px rgba(0 0 0 / 60%))"
           }}
           id="dragElement"

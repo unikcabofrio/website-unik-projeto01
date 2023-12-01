@@ -9,11 +9,11 @@ import Home from "@/components/main/home"
 export default function Index() {
     return (
       <>
-        <Home/>
-        <Service/>
-        <Photos/>
-        <Infor/>
-        <Price/>
+        <Home id={"home"}/>
+        <Service id={"service"}/>
+        <Photos id={"photos"}/>
+        <Infor id={"infor"}/>
+        <Price id={"price"}/>
         <div className="otherpet">
           <div className="otherpet_text">
             <h3>Possui mais de um pet?</h3>

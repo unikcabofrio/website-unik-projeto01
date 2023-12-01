@@ -2,7 +2,7 @@ import Image from "next/image"
 import React,{useState} from "react"
 import Title from "@/utils/title"
 
-export default function Photos() {
+export default function Photos({id}) {
 
   const [GPhotosSelect,setGPhotosSelect] = useState(0)
   const [GPhotos] = useState([
@@ -34,7 +34,7 @@ export default function Photos() {
   }
 
     return (
-      <>
+      <div id={id}>
         <Title title={"Nossa Estrutura"} subtitle={"Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI"}/>
         <div id={"itemMaxWindow"}>
           <div className="buttonExit" onClick={()=>{ShowHidePhone(GPhotosSelect)}}>X</div>
@@ -67,6 +67,6 @@ export default function Photos() {
             )
           })}
         </section>
-      </>
+      </div>
     )
   }
