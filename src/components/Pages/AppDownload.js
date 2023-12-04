@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-import { ButtonSmall } from "@/utils/button"
+import { ButtonSmall } from "@/utils/Button"
 import PhotoCell from '@/assets/mockup_5-YrDBLMo533Cg2KkG.png'
 
 export default function AppDownload({id}) {

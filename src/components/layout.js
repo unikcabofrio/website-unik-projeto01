@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Footer from "./Footer"
+import Footer from "@/components/Footer"
 
 export default function Layout({children}) {
     return (
