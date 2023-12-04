@@ -1,37 +1,16 @@
-import Image from "next/image"
+import Contact from "@/components/Pages/Contat"
+import AppDownload from "@/components/Pages/AppDownload"
+import CountInfo from "@/components/Pages/CountInfo"
 
-import Price from "@/components/main/price"
-import Infor from "@/components/main/infor"
-import Photos from "@/components/main/photos"
-import Service from "@/components/main/service"
-import Home from "@/components/main/home" 
+import { WaveSmall } from "@/utils/wave"
 
 export default function Index() {
     return (
       <>
-        <Home id={"home"}/>
-        <Service id={"service"}/>
-        <Photos id={"photos"}/>
-        <Infor id={"infor"}/>
-        <Price id={"price"}/>
-        <div className="otherpet">
-          <div className="otherpet_text">
-            <h3>Possui mais de um pet?</h3>
-            <p>Some as diárias de todos os hóspedes e contrate um pacote promocional.</p>
-          </div>
-          <div>
-            <Image
-              src={"/assets/pet-news.png"}
-              width={535}
-              height={224}
-              alt={"pet-news"}
-            />
-          </div>
-          <div className="otherpet_bone">
-            <i className="fi fi-ss-bone"></i>
-            <p> Mais vantagens para você!</p>
-          </div>
-        </div>
+        <CountInfo id={"countInfor"}/>
+        <AppDownload id={"appdownload"}/>
+        <WaveSmall/>
+        <Contact id={"contact"}/>
       </>
     )
   }

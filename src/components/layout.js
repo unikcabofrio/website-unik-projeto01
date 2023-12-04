@@ -1,18 +1,13 @@
-import Header from './header'
-import Footer from './footer'
+import styled from "styled-components"
+import Footer from "./Footer"
 
-import React,{ useState } from 'react'
- 
-export default function Layout({ children }) {
-
-  const dataAtual = new Date();
-  const [Year] = useState(dataAtual.getFullYear())
-
-  return (
-    <div id={'layout'}>
-      <Header />
+export default function Layout({children}) {
+    return (
+      <DivContainer>
         <main>{children}</main>
-      <Footer Year={Year}/>
-    </div>
-  )
+        <Footer/>
+      </DivContainer>
+    )
 }
+
+const DivContainer = styled.div``
