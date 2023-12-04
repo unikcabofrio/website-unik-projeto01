@@ -44,15 +44,15 @@ export default function CountInfo({id}) {
         <DivContainer id={id}>
             <div>
                 <h1>{numbers[0]}</h1>
-                <p>Team members</p>
+                <p>Membros do time</p>
             </div>
             <div>
                 <h1>{numbers[1]}k</h1>
-                <p>Happy users</p>
+                <p>Usuários satisfeitos</p>
             </div>
             <div>
                 <h1>{numbers[2]}+</h1>
-                <p>Supported lenders</p>
+                <p>Credores apoiados</p>
             </div>
         </DivContainer>
     )

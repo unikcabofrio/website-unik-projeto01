@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ButtonSmall } from "@/utils/button"
 import PhotoCell from '@/assets/mockup_5-YrDBLMo533Cg2KkG.png'
 
-export default function AppDownload({id}) {
+export default function Home({id}) {
     return (
         <DivContainer id={id}>
             <Image 
