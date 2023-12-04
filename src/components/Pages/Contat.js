@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Image from "next/image"
 import Link from "next/link"
 
-import {ButtonSmall} from "@/utils/Button"
+import {ButtonSmall} from "@/utils/button"
 
 import Logo from '@/assets/logo_black-AE0xqKEXpLtVQXnM.png'
 
