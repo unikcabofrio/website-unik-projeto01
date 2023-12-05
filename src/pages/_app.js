@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Unik-CaboFrio - Site Exemplo 01</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="description" content="Author: Unik Cabo Frio, Projeto 01 - Criação de Site"></meta>
       </Head>
 
       <GlobalStyle/>
