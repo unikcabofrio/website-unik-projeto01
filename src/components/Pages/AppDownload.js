@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-import { ButtonSmall } from "@/utils/button"
+import { ButtonSmall } from "@/utils/Button"
 import PhotoCell from '@/assets/mockup_5-YrDBLMo533Cg2KkG.png'
 
 export default function AppDownload({id}) {
@@ -64,6 +64,41 @@ const DivContainer = styled.div`
         div{
             button{
                 margin-right:2rem;
+            }
+        }
+    }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        padding:1rem 1rem 25rem 1rem;
+        flex-direction:column-reverse;
+
+        img{
+            margin-top:2rem;
+            width:100%;
+            height:auto;
+        }
+
+
+        div {
+            text-align:center;
+            align-items:center;
+
+            h2{
+                font-size:3rem;
+            }
+
+            p{
+                width:100%;
+            }
+
+            div{
+                padding: 0 2rem;
+
+                button{
+                    width:100%;
+                    margin-right:0;
+                    margin-top:1rem;
+                }
             }
         }
     }

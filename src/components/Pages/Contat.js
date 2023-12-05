@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Image from "next/image"
 import Link from "next/link"
 
-import {ButtonSmall} from "@/utils/button"
+import {ButtonSmall} from "@/utils/Button"
 
 import Logo from '@/assets/logo_black-AE0xqKEXpLtVQXnM.png'
 
@@ -35,7 +35,9 @@ export default function Contact({id}) {
                     <input type="email" placeholder="Seu endereço de email" required/>
                     <p id={'fieldRequired'}>Este campo é obrigatório</p>
                 </div>
-                <ButtonSmall text="Submit" BgColor={'#7634bf'} color={"#FFFFFF"}/>
+                <div className="button">
+                    <ButtonSmall text="Submit" BgColor={'#7634bf'} color={"#FFFFFF"}/>
+                </div>
             </form>
         </DivForm>
       </DivContainer>
@@ -53,6 +55,11 @@ const DivContainer = styled.div`
     background-color:${({theme})=>{return theme.colors[0]}};
     color:${({theme})=>{return theme.colors[1]}};
     transition: all .1s;
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        padding:1rem;
+        flex-direction: column;
+    }
 `
 
 const DivInfo = styled.div`
@@ -79,6 +86,18 @@ const DivInfo = styled.div`
             text-decoration: none;
             font-size:1.3rem;
             margin-right:1rem;
+        }
+    }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        width:100%; 
+        align-items:center;
+        margin:2rem 0;
+
+        div{
+            a{
+                font-size:2rem;
+            }
         }
     }
 `
@@ -110,6 +129,27 @@ const DivForm = styled.div`
 
             #fieldRequired{
                 opacity:0;
+            }
+        }
+
+        .button{
+            width:100%;
+        }
+    }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        width:100%;
+
+        h3{
+            text-align:center;  
+        }
+
+        form{
+            .button{
+                padding:0 2rem;
+                Button{
+                    width:100%;
+                }
             }
         }
     }

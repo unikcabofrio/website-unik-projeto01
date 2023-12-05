@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-import { ButtonSmall } from "@/utils/button"
+import { ButtonSmall } from "@/utils/Button"
 import PhotoCell from '@/assets/mockup_1-AzGzyBl0Grt0gagr.png'
 import Logo from '@/assets/logo-dOq0Xev8QECl4yxO.png'
 
@@ -22,6 +22,7 @@ export default function Home({id}) {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    priority={true}
                 />
                 <div>
                     <h2>Uma maneira de controlar suas finanças</h2>
@@ -76,7 +77,6 @@ const DivContainer = styled.div`
                 font-weight:300;
                 margin:1rem 0;
                 width:80%;
-
             }
 
             div{
@@ -85,7 +85,45 @@ const DivContainer = styled.div`
                 }
             }
         }
+    }
 
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        padding:1rem 1rem 22rem 1rem;
+        align-items:center;
+
+        img{
+            width:30%;
+        }
+
+        .infor{
+            align-items:center;
+            flex-direction:column-reverse;
+            text-align:center;
+
+            img{
+                width:100%;
+                height:auto;
+            }
+
+            div {
+
+                h2{
+                    font-size:3rem;
+                }
+
+                p{
+                    width:100%;
+                }
+
+                div{
+                    padding: 0 2rem;
+                    button{
+                        width:100%;
+                        margin-right:0;
+                    }
+                }
+            }
+        }
     }
 `
 

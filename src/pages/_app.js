@@ -16,9 +16,29 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const size = {
+  mobileS: '0px',
+  mobileM: '375px',
+  mobileL: '425px',
+  tablet: '768px',
+  laptop: '1024px',
+  laptopL: '1440px',
+  desktop: '2560px'
+}
+
 const Theme = {
   colors:['#FFFFFF','#000000','#7634bf','#e03584','#161616','#f1f1f1'],
-  colorsTrans:['#7634bf52','#00000021']
+  colorsTrans:['#7634bf52','#00000021'],
+  device :{
+    mobileS: `(min-width: ${size.mobileS}) and (max-width: ${size.laptop})`,
+    mobileM: `(min-width: ${size.mobileM}) and (max-width: ${size.laptop})`,
+    mobileL: `(min-width: ${size.mobileL}) and (max-width: ${size.laptop})`,
+    tablet: `(min-width: ${size.tablet}) and (max-width: ${size.laptop})`,
+    laptop: `(min-width: ${size.laptop})`,
+    laptopL: `(min-width: ${size.laptopL})`,
+    desktop: `(min-width: ${size.desktop})`,
+    desktopL: `(min-width: ${size.desktop})`
+  }
 }
  
 export default function App({ Component, pageProps }) {

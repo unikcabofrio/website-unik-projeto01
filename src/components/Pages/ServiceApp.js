@@ -77,7 +77,6 @@ const DivContainer = styled.div`
 
     .reverse{
         flex-direction: row-reverse;
-        padding:1rem 5rem;
         background-color:${({theme})=>{return theme.colors[5]}};
     }
 
@@ -105,6 +104,8 @@ const DivContainer = styled.div`
             text-align:left;
 
             .title{
+                align-items:center;
+                text-align:center;
                 padding:0;
                 font-weight:600;
                 line-height: 2.5rem; 
@@ -120,6 +121,46 @@ const DivContainer = styled.div`
                 margin-top:1rem;
             }
 
+        }
+    }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+
+        .reverse{
+            flex-direction:column;
+        }
+
+        div {
+            flex-direction:column;
+            align-center:center;
+            padding:1rem;  
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius:.5rem;
+                margin-right:0;
+                margin-bottom:2rem;
+                object-fit: cover;
+            }
+
+            div{
+
+                .title{
+                    font-size:2.5rem;
+                    line-height: 2rem; 
+
+                    .color{
+                        margin-top:0;
+                    }
+                }
+
+                p{
+                width:100%;
+                margin-top:1rem;
+            }
+
+            }
         }
     }
 

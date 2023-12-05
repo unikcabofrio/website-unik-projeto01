@@ -12,12 +12,12 @@ export default function CountInfo({id}) {
         const delays = duration / steps;
 
         const updateNumbers = () => {
-        setNumbers((prevNumbers) => {
-            return prevNumbers.map((prevNumber, index) => {
-            const stepValue = targetValues[index] / steps;
-            return Math.min(Math.round(prevNumber + stepValue), targetValues[index]);
+            setNumbers((prevNumbers) => {
+                return prevNumbers.map((prevNumber, index) => {
+                const stepValue = targetValues[index] / steps;
+                return Math.min(Math.round(prevNumber + stepValue), targetValues[index]);
+                });
             });
-        });
         };
 
         const intervalId = setInterval(updateNumbers, delays);
@@ -36,7 +36,7 @@ export default function CountInfo({id}) {
         setInterval(() => {
             setNumbers([0,0,0])
             Increment()
-            }, 10000);
+            }, 50000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -72,6 +72,15 @@ const DivContainer = styled.div`
     div {
         h1{
             font-size:6rem;
+        }
+    }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        padding:1rem;
+        flex-direction:column;
+
+        div {
+            padding:1rem 0 ;
         }
     }
 `

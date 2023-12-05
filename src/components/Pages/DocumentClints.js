@@ -93,6 +93,30 @@ const DivContainer = styled.div`
 
         }
     }
+
+    @media ${({theme})=>{return theme.device.mobileS}} { 
+        padding:1rem;
+
+        div{
+            width:100%;
+            grid-template-columns:repeat(1, auto);
+
+            div {
+                flex-direction:column;
+
+                img{
+                    margin-top:1.3rem;
+                    width: 40%;
+                    height: auto;
+                }
+
+                div{
+                    text-align:justify;
+                    align-items:center;
+                }
+            }
+        }
+    }
 `
 
 
