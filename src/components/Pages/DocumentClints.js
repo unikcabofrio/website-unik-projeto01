@@ -5,14 +5,14 @@ import styled from "styled-components"
 export default function DocumentClints({id}) {
 
     const [clints] = useState([
-        {title:"Easy to use",name:"Anna Jenkins",descript:"I've used all of the personal finance apps on the market, and found that most have a hard time syncing my various bank accounts and cards real-time, leaving me guessing sometimes for days. Blick was a pleasant surprise! The team has really worked hard to ensure instant syncronization with most of the mainstream banks and lenders. Impressed!"},
-        {title:"Amazed by great results!",name:"Danny Lores",descript:"I rely on my budgeting spreadsheet since it helps me organize my spending data into meaningful charts and tables. That's why I've been comprehensive about switching to a personal finance app, as I found that the data presentation was usually lacking at best. Lo and behold, Blick was the only app that made the cut!"}
+        {title:"Fácil de usar",name:"Anna Jenkins",descript:"Usei todos os aplicativos de finanças pessoais do mercado e descobri que a maioria tem dificuldade em sincronizar minhas diversas contas bancárias e cartões em tempo real, o que às vezes me deixa em dúvida por dias. Blick foi uma grata surpresa! A equipe realmente trabalhou duro para garantir a sincronização instantânea com a maioria dos principais bancos e credores. Impressionado!"},
+        {title:"Surpreendido com ótimos resultados!",name:"Danny Lores",descript:"Conto com minha planilha de orçamento, pois ela me ajuda a organizar meus dados de gastos em gráficos e tabelas significativos. É por isso que fui abrangente sobre a mudança para um aplicativo de finanças pessoais, pois descobri que, na melhor das hipóteses, faltava a apresentação de dados. Veja só, Blick foi o único aplicativo que foi selecionado!"}
     ])
 
     return (
         <DivContainer id={id}>
-            <h3>REVIEWS</h3>
-            <h1>What do they say?</h1>
+            <h3>AVALIAÇÕES</h3>
+            <h1>O que eles dizem?</h1>
             <div>
                 {clints.map((index,key)=>{
                     return(

@@ -5,7 +5,7 @@ import DocumentClints from "@/components/Pages/DocumentClints"
 import ServiceApp from "@/components/Pages/ServiceApp"
 import Home from "@/components/Pages/Home"
 
-import { WaveSmall } from "@/utils/wave"
+import { WaveSmall } from "@/utils/Wave"
 
 export default function Index() {
     return (

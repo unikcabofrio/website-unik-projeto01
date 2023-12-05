@@ -18,11 +18,11 @@ export default function ServiceApp({id}) {
                     sizes="100vw"
                 />
                 <div>
-                    <div className="title">Your finances in <p className="color">one place</p></div>
+                    <div className="title">Suas finanças em<p className="color">um lugar</p></div>
                     <p>
-                        From checking accounts to savings, credit cards, and more, 
-                        personal finances can be tricky. Blicks mission is to make 
-                        it simple to manage everything from one place.
+                        De contas correntes a poupanças, cartões de crédito e muito mais, 
+                        as finanças pessoais podem ser complicadas. A missão do Blicks é 
+                        simplificar o gerenciamento de tudo em um só lugar.
                     </p>
                 </div>
             </div>
@@ -35,11 +35,11 @@ export default function ServiceApp({id}) {
                     sizes="100vw"
                 />
                 <div>
-                    <div className="title">Your finances in <p className="color">one place</p></div>
+                    <div className="title">Suas finanças em<p className="color">um lugar</p></div>
                     <p>
-                        From checking accounts to savings, credit cards, and more, 
-                        personal finances can be tricky. Blicks mission is to make 
-                        it simple to manage everything from one place.
+                        De contas correntes a poupanças, cartões de crédito e muito mais, 
+                        as finanças pessoais podem ser complicadas. A missão do Blicks é 
+                        simplificar o gerenciamento de tudo em um só lugar.
                     </p>
                 </div>
             </div>
@@ -52,11 +52,11 @@ export default function ServiceApp({id}) {
                     sizes="100vw"
                 />
                 <div>
-                    <div className="title">Your finances in <p className="color">one place</p></div>
+                    <div className="title">Suas finanças em<p className="color">um lugar</p></div>
                     <p>
-                        From checking accounts to savings, credit cards, and more, 
-                        personal finances can be tricky. Blicks mission is to make 
-                        it simple to manage everything from one place.
+                        De contas correntes a poupanças, cartões de crédito e muito mais, 
+                        as finanças pessoais podem ser complicadas. A missão do Blicks é 
+                        simplificar o gerenciamento de tudo em um só lugar.
                     </p>
                 </div>
             </div>

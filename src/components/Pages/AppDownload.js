@@ -32,7 +32,7 @@ export default function AppDownload({id}) {
 
 const DivContainer = styled.div`
     width:100%;
-    padding:5rem 5rem 15rem 5rem;
+    padding:5rem 5rem 20rem 5rem;
     display:flex;
     flex-direction:row;
     justify-content: space-between;

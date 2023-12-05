@@ -2,28 +2,35 @@ import styled from "styled-components"
 import Image from "next/image"
 
 import { ButtonSmall } from "@/utils/button"
-import PhotoCell from '@/assets/mockup_5-YrDBLMo533Cg2KkG.png'
+import PhotoCell from '@/assets/mockup_1-AzGzyBl0Grt0gagr.png'
+import Logo from '@/assets/logo-dOq0Xev8QECl4yxO.png'
 
 export default function Home({id}) {
     return (
         <DivContainer id={id}>
             <Image 
-                src={PhotoCell}
+                src={Logo}
                 alt={"Carregando Imagem"}
                 width={0}
                 height={0}
                 sizes="100vw"
             />
-            <div>
-                <h2>O que você está esperando?</h2>
-                <p>
-                    Não há melhor momento para assumir o controle de suas finanças. 
-                    Com as poderosas ferramentas de categorização e visualização do Blick, 
-                    você realmente cumprirá seu orçamento.
-                </p>
+            <div className="infor">
+                <Image 
+                    src={PhotoCell}
+                    alt={"Carregando Imagem"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                />
                 <div>
-                    <ButtonSmall text="Google Play" BgColor={'#7634bf'} color={"#FFFFFF"}/>
-                    <ButtonSmall text="App Store" BgColor={'#e03584'} color={"#FFFFFF"}/>
+                    <h2>Uma maneira de controlar suas finanças</h2>
+                    <p>
+                        A maneira fácil de manter o controle de suas finanças, não importa onde você esteja.
+                    </p>
+                    <div>
+                        <ButtonSmall text="Baixe Agora" BgColor={'#7634bf'} color={"#FFFFFF"}/>
+                    </div>
                 </div>
             </div>
         </DivContainer>
@@ -34,38 +41,51 @@ const DivContainer = styled.div`
     width:100%;
     padding:5rem 5rem 15rem 5rem;
     display:flex;
-    flex-direction:row;
-    justify-content: space-between;
+    flex-direction:column;
     background: rgb(0,0,0);
     background: linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(118,52,191,1) 100%);
 
     img{
-        width:40%;
+        width:15%;
         height:auto;
+        margin-bottom:3rem;
     }
 
-    div {
+    .infor{
         width:100%;
-        color:${({theme})=>{return theme.colors[0]}};
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
 
-        h2{
-            font-size:5rem;
-            color:${({theme})=>{return theme.colors[3]}};
-        }
-
-        p{
-            font-size:1.2rem;
-            font-weight:300;
-            margin:1rem 0;
+        img{
             width:80%;
-
+            height:auto;
         }
 
-        div{
-            button{
-                margin-right:2rem;
+        div {
+            width:100%;
+            color:${({theme})=>{return theme.colors[0]}};
+
+            h2{
+                font-size:5rem;
+                color:${({theme})=>{return theme.colors[3]}};
+            }
+
+            p{
+                font-size:1.2rem;
+                font-weight:300;
+                margin:1rem 0;
+                width:80%;
+
+            }
+
+            div{
+                button{
+                    margin-right:2rem;
+                }
             }
         }
+
     }
 `
 
